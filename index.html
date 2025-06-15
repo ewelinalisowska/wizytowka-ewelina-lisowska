@@ -14,16 +14,21 @@
     body {
       margin: 0;
       font-family: "Cormorant Garamond", serif;
-      background: url('https://images.unsplash.com/photo-1508923567004-3a6b8004f3d3?auto=format&fit=crop&w=1400&q=80https://images.unsplash.com/photo-1508923567004-3a6b8004f3d3?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('https://images.unsplash.com/photo-1602343151970-6bda5f40838b?auto=format&fit=crop&w=1400&q=80https://images.unsplash.com/photo-1508923567004-3a6b8004f3d3?auto=format&fit=crop&w=1400&q=80https://images.unsplash.com/photo-1508923567004-3a6b8004f3d3?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
       background-size: cover;
+          background-color: #aeb79d;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
+          background-blend-mode: darken;
     }
     .card {
       position: relative;
-      background: rgba(255,255,255,0.93);
+      background: linear-gradient(rgba(255,255,255,0.92), rgba(255,255,255,0.92)), url('https://images.unsplash.com/photo-1617191514003-0e6bfe7a9301?auto=format&fit=crop&w=1400&q=80');
+background-size: cover;
+background-repeat: no-repeat;
+background-blend-mode: lighten;
       border-radius: 16px;
       box-shadow: 0 4px 20px rgba(0,0,0,.15);
       max-width: 450px;
@@ -35,7 +40,7 @@
       height: auto;
       border-radius: 50%;
       position: absolute;
-      top: 60px;
+      top: 100px;
       right: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
@@ -69,7 +74,7 @@
   <div class="card">
     <img src="foto_ewelina.jpg" alt="Ewelina Lisowska" class="profile-photo">
 
-    <div style="font-style: italic; font-size: 1rem; color: #444; margin-bottom: 12px;">towarzyszę w drodze do siebie – z uważnością, ciałem i sercem<br>jesteś w ciągłym procesie – nie musisz być w tym sam!</div>
+    <div style="font-style: italic; font-size: 1rem; color: #444; margin-bottom: 12px; text-align: center;">towarzyszę w drodze do siebie – z uważnością, ciałem i sercem<br>jesteś w ciągłym procesie – nie musisz być w tym sam!</div>
 <h1>Ewelina Lisowska</h1>
     <div class="role">psycholog w trakcie szkolenia psychoterapeutycznego</div>
     <div class="role">w nurcie Gestalt</div>
