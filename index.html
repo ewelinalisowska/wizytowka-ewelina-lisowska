@@ -4,79 +4,93 @@
   <meta charset="UTF-8">
   <title>Wizytówka – Ewelina Lisowska</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    :root {{
-      --primary: #f7e8d0;
+    :root {
       --accent: #ca8a04;
       --text: #333333;
-    }}
-    body {{
+    }
+    body {
       margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background: var(--primary);
+      font-family: "Cormorant Garamond", serif;
+      background: url('https://images.unsplash.com/photo-1508923567004-3a6b8004f3d3?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
       display: flex;
       align-items: center;
       justify-content: center;
       min-height: 100vh;
-    }}
-    .card {{
-      background: #ffffff;
+    }
+    .card {
+      position: relative;
+      background: rgba(255,255,255,0.93);
       border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0,0,0,.1);
+      box-shadow: 0 4px 20px rgba(0,0,0,.15);
       max-width: 450px;
       width: 90%;
-      padding: 24px;
-      text-align: center;
-    }}
-    h1 {{
-      margin: 0 0 4px 0;
-      font-size: 1.8rem;
+      padding: 24px 24px 32px 24px;
+    }
+    .profile-photo {
+      width: 100px;
+      height: auto;
+      border-radius: 50%;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    h1 {
+      margin: 0 0 12px 0;
+      font-size: 1.9rem;
       color: var(--accent);
-    }}
-    .role {{
+    }
+    .role {
       font-size: 1.05rem;
-      margin-bottom: 12px;
-    }}
-    .section {{
-      margin: 8px 0;
-      text-align: left;
+      margin: 0;
+    }
+    .role + .role {
+      margin-top: 2px;
+    }
+    .section {
+      margin: 14px 0;
       line-height: 1.45;
-    }}
-    .tagline {{
-      font-style: italic;
-      color: var(--text);
-      margin-bottom: 16px;
-    }}
-    .qr {{
-      margin-top: 20px;
-    }}
-    a {{
+    }
+    a {
       color: var(--accent);
       text-decoration: none;
-    }}
+    }
+    .qr {
+      margin-top: 24px;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="foto_ewelina.jpg" alt="Ewelina Lisowska" style="width:140px;height:auto;border-radius:50%;margin-bottom:16px;">
-<div class="tagline">towarzyszę w drodze do siebie – z uważnością, ciałem i sercem</div>
+    <img src="foto_ewelina.jpg" alt="Ewelina Lisowska" class="profile-photo">
+
     <h1>Ewelina Lisowska</h1>
-    <div class="role">psycholog w trakcie szkolenia psychoterapeutycznego (Gestalt)</div>
+    <div class="role">psycholog w trakcie szkolenia psychoterapeutycznego</div>
+    <div class="role">w nurcie Gestalt</div>
 
     <div class="section">
-      <strong>Telefon:</strong> <a href="tel:+48537457367">537&nbsp;457&nbsp;367</a><br>
-      <strong>Email:</strong> <a href="mailto:ewelinalisowska@icloud.com">ewelinalisowska@icloud.com</a>
+      <strong>Telefon:</strong>
+      <a href="tel:+48537457367" style="font-family: 'Times New Roman', Times, serif;">
+        537&nbsp;457&nbsp;367
+      </a><br>
+      <strong>Email:</strong>
+      <a href="mailto:ewelinalisowska@icloud.com">ewelinalisowska@icloud.com</a>
     </div>
 
     <div class="section">
-      <p>Ukończyłam pięcioletnie studia magisterskie na kierunku psychologia o specjalności psychologia kliniczna (Uniwersytet Zielonogórski). Jestem trenerem TUS I i II stopnia oraz studentem szkoły psychoterapii w nurcie Gestalt.</p>
-      <p>Obecnie pracuję z dziećmi w przedszkolach publicznych w Głogowie, prowadząc zajęcia z zakresu wspierania kompetencji emocjonalno‑społecznych. Mam doświadczenie w pracy z dziećmi, rodzicami oraz nauczycielami. Poza pracą w przedszkolu prowadzę warsztaty dotyczące radzenia sobie ze stresem oraz pozytywnej komunikacji. Udzielam konsultacji w pracowni psychologicznej Justyny Konowalczyk.</p>
+      <p>Ukończyłam pięcioletnie studia magisterskie na kierunku psychologia o&nbsp;specjalności psychologia kliniczna (Uniwersytet&nbsp;Zielonogórski). Jestem trenerem TUS&nbsp;I i&nbsp;II stopnia oraz studentem szkoły psychoterapii w nurcie&nbsp;Gestalt.</p>
+      <p>Obecnie pracuję z dziećmi w przedszkolach publicznych w&nbsp;Głogowie, prowadząc zajęcia z zakresu wspierania kompetencji emocjonalno‑społecznych. Mam doświadczenie w pracy z dziećmi, rodzicami oraz nauczycielami. Poza pracą w przedszkolu prowadzę warsztaty dotyczące radzenia sobie ze stresem oraz pozytywnej komunikacji. Udzielam konsultacji w pracowni psychologicznej Justyny Konowalczyk.</p>
       <p>Regularnie uczestniczę w szkoleniach i webinariach dotyczących ochrony dzieci i młodzieży, pracy z dziećmi ze specjalnymi potrzebami, pomocy rodzinom w kryzysie oraz zdrowia psychicznego.</p>
       <p>Prywatnie jestem miłośniczką mindfulness, ziołolecznictwa, pracy z ciałem w terapii i tematu traumy. Fascynuje mnie dialog egzystencjalny i praktykuję go na co dzień, stawiając na myślenie tu i teraz. Wolny czas spędzam na spontanicznych weekendowych wypadach, słuchaniu płyt winylowych, punk rocka i techno.</p>
     </div>
 
     <div class="qr">
-      <img src="qr_ewelina.png" alt="Kod QR" width="150">
+      <img src="qr_ewelina_final.png" alt="Kod QR" width="150">
       <p>— zeskanuj, aby otworzyć wizytówkę —</p>
     </div>
   </div>
